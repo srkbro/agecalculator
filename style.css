@@ -1,0 +1,88 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+background:radial-gradient(circle at center,#051a2c,#01060c);
+color:white;
+overflow:hidden;
+}
+
+.wrapper{
+perspective:1200px;
+}
+
+.card{
+width:520px;
+height:260px;
+display:flex;
+background:linear-gradient(135deg,#071a2e,#0e3c4e);
+border-radius:10px;
+border:1px solid rgba(0,255,255,0.5);
+box-shadow:0 0 10px #00eaff,0 0 40px rgba(0,234,255,0.5);
+transform:skewX(-8deg);
+transition:transform 0.2s ease;
+}
+
+.left{
+width:55%;
+padding:35px;
+}
+
+.left h2{
+margin-bottom:20px;
+}
+
+.input-group{
+border-bottom:1px solid #6feaff;
+margin:15px 0;
+}
+
+.input-group input{
+width:100%;
+background:transparent;
+border:none;
+outline:none;
+color:white;
+padding:8px 0;
+}
+
+.login-btn{
+margin-top:15px;
+width:100%;
+padding:10px;
+border:none;
+border-radius:20px;
+background:linear-gradient(90deg,#00eaff,#00a6ff);
+color:white;
+cursor:pointer;
+transition:0.3s;
+}
+
+.login-btn:hover{
+box-shadow:0 0 15px #00eaff;
+}
+
+.create{
+margin-top:12px;
+font-size:12px;
+opacity:0.7;
+}
+
+.right{
+width:45%;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+font-size:26px;
+font-weight:bold;
+color:#9ffaff;
+}
