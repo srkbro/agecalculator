@@ -1,41 +1,44 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Premium Neon Login UI</title>
+<title>Accurate Neon Login UI</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="bg"></div>
+<div class="background"></div>
 
-<div class="scene">
-  <div class="card" id="card">
+<div class="stage">
+  <div class="login-card" id="card">
 
-    <div class="login-panel">
-      <h2>Login</h2>
+    <div class="panel login-panel">
+      <h2 class="title">Login</h2>
 
-      <div class="input-group">
+      <div class="field">
         <input type="text" placeholder="Username">
       </div>
 
-      <div class="input-group">
+      <div class="field">
         <input type="password" placeholder="Password">
       </div>
 
-      <button id="loginBtn" class="login-btn">LOGIN</button>
-      <p class="create">Create Account</p>
+      <button id="loginBtn" class="primary-btn">Continue</button>
+
+      <p class="create">Create account</p>
     </div>
 
-    <div class="welcome-panel">
-      <div class="welcome-content">
+    <div class="panel welcome-panel">
+      <div class="welcome-inner">
         <h1>WELCOME<br>BACK</h1>
-        <button id="backBtn" class="back-btn">BACK</button>
+        <button id="backBtn" class="secondary-btn">Back</button>
       </div>
     </div>
 
-    <div class="glass-sweep"></div>
+    <div class="slide-mask" id="mask"></div>
+    <div class="glass-reflection"></div>
 
   </div>
 </div>

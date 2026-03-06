@@ -11,7 +11,7 @@ backBtn.onclick = () => {
 card.classList.remove("active");
 }
 
-/* desktop tilt */
+/* 3D tilt */
 
 document.addEventListener("mousemove",(e)=>{
 
@@ -31,7 +31,7 @@ card.style.transform="skewX(-8deg) rotateY(0) rotateX(5deg)";
 
 });
 
-/* mobile touch tilt */
+/* touch tilt */
 
 card.addEventListener("touchmove",(e)=>{
 
