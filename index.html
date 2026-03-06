@@ -3,15 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Neon Login UI</title>
+<title>Premium Neon Login UI</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="wrapper">
+<div class="bg"></div>
+
+<div class="scene">
   <div class="card" id="card">
-    
-    <div class="left">
+
+    <div class="login-panel">
       <h2>Login</h2>
 
       <div class="input-group">
@@ -22,14 +24,18 @@
         <input type="password" placeholder="Password">
       </div>
 
-      <button class="login-btn">Login</button>
-
-      <p class="create">CREATE ACCOUNT</p>
+      <button id="loginBtn" class="login-btn">LOGIN</button>
+      <p class="create">Create Account</p>
     </div>
 
-    <div class="right">
-      <h1>WELCOME<br>BACK</h1>
+    <div class="welcome-panel">
+      <div class="welcome-content">
+        <h1>WELCOME<br>BACK</h1>
+        <button id="backBtn" class="back-btn">BACK</button>
+      </div>
     </div>
+
+    <div class="glass-sweep"></div>
 
   </div>
 </div>
