@@ -1,41 +1,41 @@
-const dateInput = document.getElementById("date-input");
-const calculateBtn = document.getElementById("calculateBtn");
+const dateInput=document.getElementById("date-input");
+const calculateBtn=document.getElementById("calculateBtn");
 
 let birthDate;
 let timer;
 
 calculateBtn.addEventListener("click",()=>{
 
-let dob = dateInput.value;
+let dob=dateInput.value;
 
 if(!dob){
 alert("Please select a date");
 return;
 }
 
-birthDate = new Date(dob);
+birthDate=new Date(dob);
 
 updateAge();
 
 clearInterval(timer);
 
-timer = setInterval(updateAge,1000);
+timer=setInterval(updateAge,1000);
 
 });
 
 function updateAge(){
 
-let now = new Date();
+let now=new Date();
 
-let diff = now - birthDate;
+let diff=now-birthDate;
 
-let seconds = Math.floor(diff/1000);
-let minutes = Math.floor(seconds/60);
-let hours = Math.floor(minutes/60);
-let days = Math.floor(hours/24);
-let weeks = Math.floor(days/7);
-let months = Math.floor(days/30);
-let years = Math.floor(days/365);
+let seconds=Math.floor(diff/1000);
+let minutes=Math.floor(seconds/60);
+let hours=Math.floor(minutes/60);
+let days=Math.floor(hours/24);
+let weeks=Math.floor(days/7);
+let months=Math.floor(days/30);
+let years=Math.floor(days/365);
 
 document.getElementById("years").innerText=years;
 document.getElementById("months").innerText=months;
@@ -61,6 +61,7 @@ next.setFullYear(today.getFullYear()+1);
 }
 
 let diff=next-today;
+
 let days=Math.ceil(diff/(1000*60*60*24));
 
 document.getElementById("nextBirthday").innerText=days+" Days";
@@ -74,9 +75,7 @@ let heartbeats=days*24*60*70;
 let blinks=days*24*60*20;
 
 document.getElementById("sleepFact").innerText="You slept about "+sleepYears.toFixed(1)+" years";
-
 document.getElementById("heartbeatFact").innerText="Your heart beat about "+Math.floor(heartbeats).toLocaleString()+" times";
-
 document.getElementById("blinkFact").innerText="You blinked about "+Math.floor(blinks).toLocaleString()+" times";
 
 }
@@ -96,13 +95,13 @@ if(navigator.share){
 
 navigator.share({
 title:"Age Calculator",
-text:"Check your age using this tool",
+text:"Check your age",
 url:window.location.href
 });
 
 }else{
 
-alert("Sharing not supported on this device");
+alert("Sharing not supported");
 
 }
 
