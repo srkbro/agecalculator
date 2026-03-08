@@ -1,4 +1,130 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Age Calculator - Calculate Your Exact Age</title>
+
+<meta name="description" content="Free online age calculator to calculate your exact age in years, months, weeks, days, hours, minutes and seconds instantly.">
+
+<meta name="keywords" content="age calculator, calculate age online, birthday calculator, exact age finder">
+
+<meta name="robots" content="index, follow">
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="bg-glow glow1"></div>
+<div class="bg-glow glow2"></div>
+
+<div class="app">
+
+<h1 class="title">AGE <span>CALCULATOR</span></h1>
+
+<div class="input-box">
+<label>Select Birth Date</label>
+<input type="date" id="date-input">
+</div>
+
+<button id="calculateBtn" class="neon-btn">CALCULATE</button>
+
+<div class="result-container">
+
+<div class="card">
+<div id="years" class="number">--</div>
+<div class="label">YEARS</div>
+</div>
+
+<div class="card">
+<div id="months" class="number">--</div>
+<div class="label">MONTHS</div>
+</div>
+
+<div class="card">
+<div id="weeks" class="number">--</div>
+<div class="label">WEEKS</div>
+</div>
+
+<div class="card">
+<div id="days" class="number">--</div>
+<div class="label">DAYS</div>
+</div>
+
+<div class="card">
+<div id="hours" class="number">--</div>
+<div class="label">HOURS</div>
+</div>
+
+<div class="card">
+<div id="minutes" class="number">--</div>
+<div class="label">MINUTES</div>
+</div>
+
+<div class="card">
+<div id="seconds" class="number">--</div>
+<div class="label">SECONDS</div>
+</div>
+
+</div>
+
+<div class="extra-section">
+
+<div class="birthday-box">
+<h3>🎂 Next Birthday In</h3>
+<div id="nextBirthday">-- Days</div>
+</div>
+
+<div class="funfacts-box">
+<h3>🧠 Fun Facts</h3>
+<p id="sleepFact"></p>
+<p id="heartbeatFact"></p>
+<p id="blinkFact"></p>
+</div>
+
+<div class="planet-box">
+<h3>🪐 Age On Other Planets</h3>
+<p id="mercury"></p>
+<p id="venus"></p>
+<p id="mars"></p>
+<p id="jupiter"></p>
+</div>
+
+<div class="share-box">
+<button onclick="shareResult()" class="share-btn">
+Share Result
+</button>
+</div>
+
+</div>
+
+</div>
+
+<footer class="footer">
+
+<p>If you like my ideas, please follow me on Facebook</p>
+
+<a href="https://www.facebook.com/share/1L9KjPuLyu/?mibextid=wwXIfr" target="_blank" class="fb-link">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#00f7ff" viewBox="0 0 24 24">
+<path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2.2V12h2.2V9.8c0-2.2 1.3-3.4 3.3-3.4.9 0 1.9.2 1.9.2v2.1h-1.1c-1.1 0-1.4.7-1.4 1.4V12h2.4l-.4 2.9h-2v7A10 10 0 0 0 22 12"/>
+</svg>
+
+</a>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
 <html lang="en">
 
 <head>
